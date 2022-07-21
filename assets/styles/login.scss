@@ -1,0 +1,61 @@
+@import "colors.scss";
+.auth-form {
+  background: $form-background;
+  box-shadow: $form-shadow;
+  text-align: center;
+  border-radius: 30px;
+  margin: 100px auto;
+  width: 40%;
+  .title {
+    font-size: 22px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  input {
+    font-weight: 600;
+    width: 290px;
+    padding: 16px 15px;
+    margin: 0 auto;
+    border: 1px solid $form-grey;
+    border-radius: 8px;
+    font-size: 14px;
+    color: black;
+    outline-width: 0px;
+  &::placeholder {
+    color: $form-grey;
+   }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    flex: 1;
+  }
+  .password {
+    position: relative;
+    margin: 0 auto;
+    .show{
+      position: absolute;
+      right: 20px;
+      top: 18px;
+      cursor: pointer;
+    }
+  }
+   .login {
+    row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding-bottom: 70px;
+  }
+  button{
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 7px;
+    color: $form-dark;
+    border: none;
+    padding: 10px 100px;
+    background-color: white;
+    box-shadow: $form-button-shadow;
+  }
+}
